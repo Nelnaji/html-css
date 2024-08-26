@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  /* debug line*/
+  /* box-shadow: inset 0px 0px 1px white; */
+}
+
+:root {
+  --picture-size: 35rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "star-jedi";
+  src: url(./src/star_jedi/starjedi/Starjedi.ttf);
+}
+@font-face {
+  font-family: "star-json";
+  src: url(./src/star_jedi/stjedise/STJEDISE.TTF);
+}
+
+.main-wrapper {
+  padding-top: 5rem;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+}
+
+header {
+  padding: 1rem;
+  width: 50%;
+}
+
+.menu__nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: inset 0px 0px 1px white;
+}
+
+.menu__link {
+  font-size: 3rem;
+  font-family: "star-json";
+  color: white;
+  text-decoration: none;
+}
+.menu__link:hover {
+  color: yellow;
+}
+
+.cara__section {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  border: 1px black;
+  justify-content: center;
+  width: 50%;
+}
+
+.cara__section-box {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.cara__picture-box {
+  border-radius: 50%;
+  width: var(--picture-size);
+  height: var(--picture-size);
+  overflow: hidden;
+}
+.cara__picture {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cara__title {
+  font-family: "star-jedi";
+  font-size: 7rem;
+  color: yellow;
+}
+
+.cara__link:visited,
+.cara__link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.cara__link:hover {
+  color: yellow;
+}
+
+.cara__work {
+  font-size: 5rem;
+}
+
+.cara__info-box {
+  border: 2px white;
+}
+.cara__info-subtitle {
+  font-family: "star-jedi";
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.cara__info-text {
+  font-size: 1.8rem;
+}
+.cara__info-text-link {
+  font-size: 1.4rem;
+}
+
+.cara__info-list {
+  box-shadow: inset 0px 0px 10px yellow;
+  list-style: none;
+  padding: 5rem 2rem;
+}
+.list__item {
+  padding: 2rem 0rem;
+  font-size: 2rem;
+}
+
+.up-arrow {
+  right: 4rem;
+  color: white;
+  z-index: 100;
+  bottom: 3rem;
+  position: fixed;
+}
+
+.text__link,
+.text__link:visited {
+  text-decoration: none;
+  color: yellow;
+  font-size: 1.6rem;
+}
+
+.text__link:hover {
+  color: grey;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu__link {
+    font-size: 2.3rem;
+  }
+
+  .cara__section {
+    width: 80%;
+  }
+  header {
+    width: 80%;
+  }
+}
